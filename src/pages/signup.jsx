@@ -55,12 +55,13 @@ class Signup extends React.Component {
    .post('http://127.0.0.1:7000/api/v1/customers/signup', registered)
    .then((response) => console.log(response.data));
 
-  this.setState({
-   name: '',
-   email: '',
-   password: '',
-   confirmPassword: '',
-  });
+   window.location = 'login'
+//   this.setState({
+//    name: '',
+//    email: '',
+//    password: '',
+//    confirmPassword: '',
+//   });
  }
 
  render() {

@@ -36,10 +36,11 @@ class Login extends React.Component {
    .post('http://127.0.0.1:7000/api/v1/customers/login', LogedIn)
    .then((response) => console.log(response.data));
 
-  this.setState({
-   email: '',
-   password: '',
-  });
+   window.location = 'review'
+//   this.setState({
+//    email: '',
+//    password: '',
+//   });
  }
 
  render() {
